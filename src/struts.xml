@@ -5,5 +5,11 @@
 <struts>
 
 	<constant name="struts.devMode" value="true"></constant>
-
+	<package name="p1" extends="struts-default" namespace="/customer">
+	
+		<action name="regist" class="com.power.using.action.CustomerAction" method="regist"></action>
+		
+		<action name="regist1" class="com.power.using.action.CustomerAction" method="regist1"></action>
+	
+	</package>
 </struts>
